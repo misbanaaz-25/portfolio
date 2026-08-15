@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Misba Naaz — Developer &amp; Shayira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- custom cursor dot -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- noise overlay -->
+<div class="noise"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">MN<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">experience</a>
+      <a href="#certs">certifications</a>
+      <a href="#contact">contact</a>
+    </div>
+    <div class="mode-toggle" id="modeToggle" role="button" tabindex="0" aria-label="Toggle Code / Shayari mode">
+      <span class="mode-track">
+        <span class="mode-thumb"></span>
+      </span>
+      <span class="mode-label" id="modeLabel">code_mode</span>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">about</a>
+  <a href="#skills">skills</a>
+  <a href="#projects">projects</a>
+  <a href="#experience">experience</a>
+  <a href="#certs">certifications</a>
+  <a href="#contact">contact</a>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <p class="eyebrow"><span class="blink-cursor">▍</span> <span id="eyebrowText">whoami</span></p>
+        <h1 class="hero-name">
+          <span class="line">Misba</span>
+          <span class="line accent-word" id="heroAccentWord">Naaz</span>
+        </h1>
+        <p class="hero-role" id="heroRole">Frontend / Mobile Developer — React Native &amp; Expo</p>
+        <p class="hero-desc" id="heroDesc">
+          MCA student building full-screen call notifications and telecom API
+          integrations for Airtel subscribers. Currently interning at
+          <strong> Bluestock Fintech</strong>.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">view_projects()</a>
+          <a href="#contact" class="btn btn-ghost">say_hello()</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="terminal" id="heroTerminal">
+          <div class="terminal-bar">
+            <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+            <span class="terminal-title" id="terminalTitle">misba@portfolio: ~</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <p><span class="prompt">$</span> cat profile.json</p>
+            <pre id="terminalOutput">{
+  "name": "Misba Naaz",
+  "role": "Frontend/Mobile Dev Intern",
+  "company": "Bluestock Fintech",
+  "education": "MCA, Jamia Hamdard (2025-27)",
+  "stack": ["React Native", "Expo", "TypeScript"],
+  "status": "shipping FSI notifications 🚀"
+}</pre>
+            <p><span class="prompt">$</span> <span class="typing-cursor">▍</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <p class="section-eyebrow">01 — about</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">Two threads, <span class="accent-word">one person.</span></h2>
+        <p>
+          I'm an MCA student at Jamia Hamdard University (2025–27 batch),
+          currently interning at Bluestock Fintech as a frontend/mobile
+          developer. My day job is React Native — building call-management
+          apps that talk to telecom backends, wrestling with push
+          notifications, and shipping features that have to work even when
+          the app is dead in the background.
+        </p>
+        <p>
+          Outside of code, I write — Urdu &amp; Hindi shayari under the
+          takhallus <span class="urdu">"नाज़"</span>, and fiction that ranges
+          from corporate romance to historical Hindi prose. I like building
+          things that are complete: full apps, full manuscripts, nothing
+          half-shipped.
+        </p>
+        <div class="about-tags">
+          <span class="tag">Ghaziabad, IN</span>
+          <span class="tag">B.Sc. Computer Science</span>
+          <span class="tag">MCA @ Jamia Hamdard</span>
+          <span class="tag">Family biz: Computers, Roorkee</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num">13+</span>
+          <span class="stat-label">screens shipped in ACM Call Manager</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">4</span>
+          <span class="stat-label">SCL/XML telecom APIs integrated</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">300+</span>
+          <span class="stat-label">pages across writing projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">2</span>
+          <span class="stat-label">major internship phases completed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section alt">
+    <p class="section-eyebrow">02 — skills</p>
+    <h2 class="section-title">What I build <span class="accent-word">with.</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Mobile &amp; Frontend</h3>
+        <div class="chip-row">
+          <span class="chip">React Native</span>
+          <span class="chip">Expo / EAS</span>
+          <span class="chip">Expo Router</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Notifee</span>
+          <span class="chip">React</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Integration</h3>
+        <div class="chip-row">
+          <span class="chip">Spring Boot</span>
+          <span class="chip">Django REST</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">SCL / XML APIs</span>
+          <span class="chip">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data &amp; Analytics</h3>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Jupyter / ML scoring</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Native &amp; Tools</h3>
+        <div class="chip-row">
+          <span class="chip">Android (Jetpack Compose)</span>
+          <span class="chip">Android Studio</span>
+          <span class="chip">Git</span>
+          <span class="chip">AsyncStorage</span>
+          <span class="chip">docx / pptxgenjs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <p class="section-eyebrow">03 — projects</p>
+    <h2 class="section-title">Things I've <span class="accent-word">shipped.</span></h2>
+
+    <div class="project-list">
+
+      <article class="project-card featured">
+        <div class="project-info">
+          <p class="project-kicker">flagship / internship</p>
+          <h3>ACM Call Manager</h3>
+          <p class="project-desc">
+            A React Native + Expo Router app for Airtel subscribers, built
+            with a full FCM + Notifee push pipeline supporting foreground,
+            background, and killed-state notification handling — including
+            a custom full-screen intent overlay that mimics native
+            incoming-call UI.
+          </p>
+          <ul class="project-points">
+            <li>Integrated mCarbon/Airtel SCL XML APIs: SEND_OTP, OTP_CNF, Encode, Subscribe, ChangeActiveProfile</li>
+            <li>Built custom hooks: useActiveProfile, useProfileActivation, useSubscription, useCountdownTimer</li>
+            <li>OTP auto-fill, AsyncStorage session persistence, custom AlertModal system</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip small">React Native</span>
+            <span class="chip small">Notifee</span>
+            <span class="chip small">TypeScript</span>
+            <span class="chip small">EAS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-info">
+          <p class="project-kicker">R&amp;D / proof of concept</p>
+          <h3>NotificationTest</h3>
+          <p class="project-desc">
+            An isolated Expo SDK 57 project to prove out full-screen intent
+            (FSI) notifications — WhatsApp-style incoming call UI — before
+            integrating the mechanism into ACM Call Manager.
+          </p>
+          <div class="chip-row">
+            <span class="chip small">Expo Router</span>
+            <span class="chip small">Notifee 9.1.8</span>
+            <span class="chip small">Config Plugins</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-info">
+          <p class="project-kicker">full stack</p>
+          <h3>Inventory Management System</h3>
+          <p class="project-desc">
+            A full-stack inventory system built with Spring Boot, React,
+            and PostgreSQL — covering stock tracking, CRUD workflows, and a
+            relational schema designed from scratch.
+          </p>
+          <div class="chip-row">
+            <span class="chip small">Spring Boot</span>
+            <span class="chip small">React</span>
+            <span class="chip small">PostgreSQL</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-info">
+          <p class="project-kicker">data &amp; ML</p>
+          <h3>Nifty 100 Financial Intelligence System</h3>
+          <p class="project-desc">
+            A Python ETL pipeline feeding a PostgreSQL warehouse and Power
+            BI dashboards, with a Django REST API layer and Jupyter
+            notebooks doing ML-based scoring and clustering on Nifty 100
+            stocks.
+          </p>
+          <div class="chip-row">
+            <span class="chip small">Python</span>
+            <span class="chip small">PostgreSQL</span>
+            <span class="chip small">Power BI</span>
+            <span class="chip small">Django REST</span>
+            <span class="chip small">ML</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section alt">
+    <p class="section-eyebrow">04 — experience</p>
+    <h2 class="section-title">Timeline <span class="accent-word">so far.</span></h2>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <p class="tl-date">2025 — Present</p>
+          <h3>Frontend / Mobile Developer Intern</h3>
+          <p class="tl-org">Bluestock Fintech</p>
+          <p class="tl-desc">
+            Building ACM Call Manager end-to-end: notification pipeline,
+            telecom API integration with mCarbon/Airtel, and full UI
+            implementation across 13+ screens.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <p class="tl-date">2025 — 2027</p>
+          <h3>MCA (Master of Computer Applications)</h3>
+          <p class="tl-org">Jamia Hamdard University, New Delhi</p>
+          <p class="tl-desc">
+            Postgraduate coursework alongside hands-on internship work in
+            mobile development and systems integration.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <p class="tl-date">Earlier internship phase</p>
+          <h3>Full-Stack &amp; Data Projects</h3>
+          <p class="tl-org">Independent / Academic</p>
+          <p class="tl-desc">
+            Built the Inventory Management System and Nifty 100 Financial
+            Intelligence System — spanning Spring Boot, Django REST,
+            PostgreSQL, and applied ML.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <p class="tl-date">B.Sc.</p>
+          <h3>Bachelor of Science, Computer Science</h3>
+          <p class="tl-org">—</p>
+          <p class="tl-desc">
+            Where it started: Android development with Jetpack Compose and
+            XML in Android Studio, before moving into React Native.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS + ACHIEVEMENTS ============ -->
+  <section id="certs" class="section">
+    <p class="section-eyebrow">05 — certifications &amp; achievements</p>
+    <h2 class="section-title">Proof of <span class="accent-word">work.</span></h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <span class="cert-icon">◆</span>
+        <h3>Google Data Analytics</h3>
+        <p>Professional Certificate — data cleaning, visualization &amp; analysis fundamentals.</p>
+      </div>
+      <div class="cert-card">
+        <span class="cert-icon">◆</span>
+        <h3>Python for Data Analysts</h3>
+        <p>Udemy — applied Python for data analysis and reporting.</p>
+      </div>
+      <div class="cert-card">
+        <span class="cert-icon">◆</span>
+        <h3>Shipped production notifications</h3>
+        <p>Built and verified full-screen intent notifications working across foreground, background &amp; killed app states.</p>
+      </div>
+      <div class="cert-card">
+        <span class="cert-icon">◆</span>
+        <h3>Live telecom integration</h3>
+        <p>Integrated 4 production SCL/XML APIs with Airtel's mCarbon backend for real subscriber flows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHAYARI EASTER EGG (visible in shayari mode) ============ -->
+  <section id="shayari" class="section shayari-section">
+    <p class="section-eyebrow">बोनस — कलम से</p>
+    <h2 class="section-title urdu-title">नाज़ की कलम से</h2>
+    <blockquote class="couplet">
+      कोड में भी एक ग़ज़ल बसती है,<br />
+      हर फंक्शन में एक कहानी हँसती है।
+    </blockquote>
+    <p class="couplet-note">— नाज़</p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section alt contact-section">
+    <p class="section-eyebrow">06 — contact</p>
+    <h2 class="section-title">Let's <span class="accent-word">talk.</span></h2>
+    <p class="contact-sub">Open to internships, collaborations, or just a good conversation about code &amp; couplets.</p>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Say something..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">send_message()</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+
+    <div class="social-row">
+      <a href="#" class="social-link">GitHub</a>
+      <a href="#" class="social-link">LinkedIn</a>
+      <a href="#" class="social-link">Email</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>designed &amp; built by Misba Naaz — <span id="footerYear"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
